@@ -1,6 +1,5 @@
 const { request, response } = require('express');
 const Comic = require('../models/comic-model');
-const {v4:uuid} = require('uuid');
 
 module.exports = {
     admin: async function (request, response) {
