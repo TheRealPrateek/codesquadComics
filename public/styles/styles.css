@@ -1,0 +1,409 @@
+:root {
+    --background-1: #063C5E;
+    --border: #FCCF14;
+    --head-foot-font: #FFFFFF;
+    --table-color-2: #C2C2C2;
+    --gradient-2: #009E9E;
+    --gradient-3: #006B6B;
+}
+
+/* body stylings */
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    background-image: linear-gradient(var(--head-foot-font), var(--gradient-2), var(--gradient-3));
+    font-size: 1.4rem;
+    font-family: 'Open Sans';
+}
+
+.container {
+    background-color: white;
+    width: 75%;
+    border: 5px solid var(--background-1);
+    margin: 5% auto;
+    padding: 3%;
+}
+
+.container h1, .container h2 {
+    text-align: center;
+    color: var(--background-1);
+    font-family: 'Fredericka the Great';
+}
+
+/* header stylings */
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    font-family: 'Fredericka the Great';
+}
+
+nav ul {
+    min-width: max-content;
+    list-style: none;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+
+nav li {
+    padding: 0 16%;
+}
+
+.hburg-menu {
+    display: none;
+    color: var(--head-foot-font);
+}
+
+.head-img {
+    width: 18rem;
+    height: auto;
+}
+
+/* header and footer stylings */
+
+footer, nav {
+    background-color: var(--background-1);
+}
+
+.head-foot-text {
+   color: var(--head-foot-font);
+}
+
+.head-foot-text a {
+    color: var(--head-foot-font);
+    text-decoration: none;
+}
+
+.head-foot-text a:hover {
+    color: var(--border);
+    font-weight: bold;
+}
+
+.head-foot-text a:active {
+    color: var(--background-1);
+    background-color: var(--border);
+    font-weight: bold;
+}
+
+/* footer stylings */
+
+footer {
+    width: 100%;
+    border-top: 5px solid var(--border);
+    font-family: 'Fredericka the Great';
+}
+
+.footer-container {
+    padding: 1.5% 0 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-container h3 {
+    color: var(--border);
+}
+
+.footer-text {
+    min-width: fit-content;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-img {
+    width: 15rem;
+    height: auto;
+}
+
+/* about page stylings */
+
+.about-comics {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.about-comics h1, .about-comics article, .about-comics h2, .about-comics ul {
+    padding: 1% 0;
+}
+
+/* comic card stylings */
+
+.comic-card {
+    width: 80%;
+    margin: 5% auto 3%;
+    border: solid 5px var(--border);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-container {
+    background-color: var(--background-1);
+    box-sizing: border-box;
+    border-radius: 45px 45px 0 0px;
+    width: 100%;
+    min-width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.card-heading {
+    color: var(--border);
+    margin: 0 auto 0;
+    padding: 0 10% 0;
+    font-family: 'Fredericka the Great';
+    text-align: center;
+}
+
+.card-img {
+    border: 3px solid var(--head-foot-font);
+    border-radius: 2rem;
+    width: 70%;
+    height: auto;
+    margin: 0 auto 7%;
+    display: block;
+}
+
+.card-text-container {
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 0 0 45px 45px;
+    width: 100%;
+    min-width: min-content;
+    padding: 5%;
+    font-size: .8em;
+}
+
+.card-text-container b {
+    color: var(--background-1);
+}
+
+/* index stylings */
+
+.complete-collection-container {
+    min-width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.comic-entry {
+    width: min-content;
+    padding: 3%;
+}
+
+.comic-text {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.complete-collection-container a {
+    color: var(--background-1);
+    text-decoration: none;
+}
+
+.complete-collection-container a:hover {
+    color: var(--gradient-2);
+    font-weight: bold;
+}
+
+.complete-collection-container a:active {
+    color: var(--background-1);
+    font-weight: bold;
+    background-color: var(--border);
+}
+
+#display {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto 1.5%;
+    background-color: var(--border);
+    color: var(--background-1);
+    display: block;
+    font-size: 1.1rem;
+    padding: .25em .5em;
+    font-family: 'Open Sans';
+}
+
+/* admin page stylings */
+
+.comic-table-container {
+    width: 90%;
+    margin: auto;
+    overflow-x: scroll;
+}
+
+.add-comic-table {
+    width: 970px;
+    margin: auto;
+}
+
+.add-comic-table, .add-comic-table th, .add-comic-table td {
+    border: 2px solid var(--background-1);
+    border-collapse: collapse;
+}
+
+.add-comic-table th, .add-comic-table td:nth-child(1) {
+    padding: 1%;
+}
+
+.add-comic-table td:nth-child(2), .add-comic-table td:nth-child(3) {
+    text-align: center;
+} 
+
+.add-comic-table th, .add-comic-table tr:nth-of-type(even) {
+    background-color: var(--table-color-2);
+}
+
+.add-comic-table input[type=button], input[type=submit] {
+    width: 6.5rem;
+    height: 2rem;
+    font-size: 1.1rem;
+    padding: auto;
+    font-family: 'Open Sans';
+}
+
+.add-comic-table input[value="EDIT"] {
+    background-color: var(--background-1);
+    color: white;
+}
+
+.add-comic-table input[value="DELETE"] {
+    background-color: var(--border);
+    color: var(--background-1);
+}
+
+.add-comic-button {
+    background-color: var(--border);
+    color: var(--background-1);
+    width: fit-content;
+    margin: auto;
+    font-size: 1.2rem;
+    margin-bottom: 5%;
+    padding: .3rem .6rem;
+    display: block;
+    font-family: 'Open Sans';
+}
+
+/* form stylings */
+
+.form {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.form div {
+    display: flex;
+    align-items: baseline;
+}
+
+.form input, .form select, .form textarea {
+    margin-left: .5em;
+}
+
+.submit-button {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--border);
+    font-size: 1.1rem;
+    padding: .25em 1em;
+    margin-top: 10%;
+    align-self: center;
+    font-family: 'Open Sans';
+}
+
+.create-update textarea {
+    height: 10em;
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 5%;
+    }
+
+    .container h1, .container h2 {
+        font-size: 1.4em;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 1.5rem;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hburg-menu {
+        display: block;
+        margin: 0 10%;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 6%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .comic-card {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card-img-container {
+        width: 100%;
+        min-width: min-content;
+        border-radius: 45px 0 0 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .card-img {
+        margin: 0 auto 5%;
+    }
+    
+    .card-text-container {
+        box-sizing: border-box;
+        border-radius: 0 45px 45px 0;
+        width: 100%;
+        padding: 3%;
+        font-size: .8em;
+    }
+
+    .form label {
+        min-width: fit-content;
+    }
+
+    .form input, .form select, .form textarea {
+        width: 20em;
+    }
+}
+
+/* here ends the styling sheet */

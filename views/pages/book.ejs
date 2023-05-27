@@ -1,0 +1,35 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/nav') -%>
+    <div class="comic-card">
+        <div class="card-img-container">
+            <h3 class="card-heading"><%= bookDetail.title %></h3>
+            <img class="card-img" src="/images/<%= bookDetail.image %>">
+        </div>
+        <div class="card-text-container">
+            <article>
+                <p>
+                    <b><u>Title:</u></b> <i><%= bookDetail.title %></i>
+                </p>
+                <p>
+                    <b><u>Author:</u></b> <%= bookDetail.author %>
+                </p>
+                <p>
+                    <b><u>Publisher:</u></b> <%= bookDetail.publisher %>
+                </p>
+                <p>
+                    <b><u>Genre:</u></b> <%= bookDetail.genre %>
+                </p>
+                <p>
+                    <b><u>Number of pages:</u></b> <%= bookDetail.pages %>
+                </p>
+                <p>
+                    <b><u>Rating:</u></b> <%= bookDetail.rating %> stars
+                </p>
+                <p>
+                    <b><u>Synopsis:</u></b> <%= bookDetail.synopsis %>
+                </p>
+            </article>
+        </div>
+    </div>
+<br>
+        <%- include('../partials/footer') -%>

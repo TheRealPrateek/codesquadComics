@@ -1,0 +1,59 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/nav') -%>
+<h1><b>CREATE NEW COMIC</b></h1>
+<form class="form create-update" action="/books/" method="post">
+    <div>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" placeholder="Title" required="true">
+    </div>
+    <br>
+    <div>
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" placeholder="Author" required="true">
+    </div>
+    <br>
+    <div>
+        <label for="images">Images:</label>
+        <input type="text" name="images" id="images" placeholder="images">
+    </div>
+    <br>
+    <div>
+        <label for="publisher">Publisher:</label>
+        <select name="publisher" id="publisher">
+            <option selected>Select</option>
+            <option value="boombox">BOOM! Box</option>
+            <option value="dc-comics">DC Comics</option>
+            <option value="abrams">Harry N. Abrams</option>
+            <option value="icon-books">Icon Books</option>
+            <option value="image-comics">Image Comics</option>
+            <option value="marvel">Marvel</option>
+            <option value="simon-schuster">Simon &amp; Schuster</option>
+            <option value="top-shelf">Top Shelf Productions</option>
+            <option value="viz-llc">VIZ Media LLC</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <label for="genre">Genre:</label>
+        <input type="text" name="genre" id="genre" placeholder="Genre">
+    </div>
+    <br>
+    <div>
+        <label for="page">Number of pages:</label>
+        <input type="text" name="pages" id="pages" placeholder="Number of pages">
+    </div>
+    <br>
+    <div>
+        <label for="rating">Rating:</label>
+        <input type="number" name="rating" id="rating" min="1" max="5">
+    </div>
+    <br>
+    <div>
+        <label for="synopsis">Synopsis:</label>
+        <textarea name="synopsis" id="synopsis">Synopsis</textarea>
+    </div>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</div>
+<%- include('../partials/footer') -%>

@@ -1,0 +1,31 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/nav') -%>
+<h1><b>CODESQUAD COMICS</b></h1>
+<article>
+    CodeSquad Comics is a collection of graphic novels read by Prateek Poddar. The site is intended to display comic book covers along with information about each book, including the author, a rating, and other details about the graphic novel. Browse through the complete collection below. Click on the cover image or the Details link to see even more information for each graphic novel including the publisher, genre, number of pages, and a brief synopsis. The About page includes meta information about this collection. Login is only available to the site administrator at this time.
+</article>
+</div>
+<div class="container">
+<h1 class="complete-comic-collection"><b>COMPLETE COMIC COLLECTION</b></h1>
+<section class="complete-collection-container">
+    <% for (let book of comicBooks) { %>
+        <div class="comic-entry">
+            <a href="/books/<%= book.id %>"><img alt="<%= book.title %>" src='/images/<%= book.image %>' style="width: 200px;"></a>
+            <div class="comic-text">
+                <i><%= book.title %></i>
+                <br>
+                <%= book.author %>
+                <br>
+                <%= book.rating %> stars
+                <br>
+                <a href="/books/<%= book.id %>">Details</a>
+            </div>
+            <br>
+        </div>
+    <% } %> 
+</section>
+<br>
+<input id="display" type="button" name="display-more" value="DISPLAY MORE">
+<br>
+</div>
+<%- include('../partials/footer') -%>

@@ -1,0 +1,18 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/nav') -%>
+    <input type="button" value="Log out" onclick="window.location.href='/logout/'" class="add-comic-button">
+    <h1><b>ADMIN PAGE</b></h1>
+    <input class="add-comic-button" type="button" name="add-comic" value="ADD NEW COMIC" onclick="window.location.href='/admin-console/create-book';">
+    <div class="comic-table-container">
+        <table class="add-comic-table">
+            <thead>
+                <th><b>COMIC TITLE</b></th>
+                <th><b>EDIT</b></th>
+                <th><b>DELETE</b></th>
+            </thead>
+            <tbody>
+                <%- include('../partials/book-listing') -%>
+        </table>
+    </div>
+</div>
+<%- include('../partials/footer') -%>
