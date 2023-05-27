@@ -39,7 +39,7 @@ passport.deserializeUser(function(user, cb) {
 passport.use(new GoogleStrategy ({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "https://agile-lab-coat-bat.cyclic.app"
+    callbackURL: "https://agile-lab-coat-bat.cyclic.app/auth/google/NAME?"
 },
 
 function (accessToken, refreshToken, email, cb) {
